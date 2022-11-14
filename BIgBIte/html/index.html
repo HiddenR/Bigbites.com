@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <title>Big-Bytes</title>
+    <!-- style -->
+    <link rel="stylesheet" href="../style/index/style.css" />
+    <link rel="stylesheet" href="../style/index/nav.css" />
+    <link rel="stylesheet" href="../style/index/main.css" />
+    <link rel="stylesheet" href="../style/index/displaymenu.css" />
+    <link rel="stylesheet" href="../style/index/about.css" />
+  </head>
+  <body>
+    <div class="toggle-btn">
+      <img src="../nav-btn.png" onclick="btnshow()" />
+    </div>
+    <nav id="nav-btn">
+      <a href="#main"> BIG-Bytes </a>
+      <a href="#menu-display">MENU</a>
+      <a href="#about">ABOUT</a>
+      <a href="order.html" target="_blank" onclick="btndis()">
+        <span id="order">ORDER NOW!!</span></a
+      >
+    </nav>
+    <main id="main">
+      <!-- slider -->
+      <div class="slider">
+        <div class="slides">
+          <!-- image-slider -->
+          <div class="slide" id="first">
+            <img src="../imageslider/radio1.JPG" />
+          </div>
+          <div class="slide">
+            <img src="../imageslider/radio2.JPG" />
+          </div>
+          <div class="slide">
+            <img src="../imageslider/radio3.JPG" />
+          </div>
+          <div class="slide t">
+            <img src="../imageslider/radio4.JPG" />
+          </div>
+          <div class="slide">
+            <img src="../imageslider/radio5.JPG" />
+          </div>
+
+          <!-- automatic slider -->
+          <div class="autoslider">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+        </div>
+        <!-- manual slider -->
+        <div class="manual-slider">
+          <!-- radio button -->
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio1"
+            onclick="activeradio()"
+            value="1"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio2"
+            value="2"
+            onclick="activeradio()"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio3"
+            value="3"
+            onclick="activeradio()"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio4"
+            onclick="activeradio()"
+            value="4"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            value="5"
+            id="radio5"
+            onclick="activeradio()"
+          />
+        </div>
+      </div>
+    </main>
+    <!-- burger display -->
+    <div class="menu-display" id="menu-display">
+      <div class="letter">
+        <span id="letter"> Burger</span>
+      </div>
+      <div class="burger-display">
+        <div class="burger-wrapper">
+          <img src="../burger/burger1.png" id="Image-id" />
+          <span>
+            Chipotle Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="../burger/burger2.png" id="Image-id" />
+          <span>
+            Double Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="../burger/burger3.png" id="Image-id" />
+          <span>
+            Bully Boy Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="../burger/burger4.png" id="Image-id" />
+          <span>
+            Classic Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="../burger/burger5.png" id="Image-id" />
+          <span>
+            California Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="../burger/burger6.png" id="Image-id" />
+          <span>
+            Double
+            <br />
+            California Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+      </div>
+      <div class="letter-dsrink">
+        <span id="letter-dsrink"> Drinks</span>
+      </div>
+
+      <!-- drinks -->
+      <div class="Drinks">
+        <div class="Drinks-wrapper">
+          <img src="../drinks/drinks1.png" id="Image-id" />
+          <span>
+            Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="../drinks/drinks2.png" id="Image-id" />
+          <span>
+            Iced Caramel Latte <br />Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="../drinks/drinks3.png" id="Image-id" />
+          <span>
+            Iced Latte <br />Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="../drinks/drinks4.png" id="Image-id" />
+          <span>
+            LiberTea MilkTea <br />940ml
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="../drinks/drinks5.png" id="Image-id" />
+          <span>
+            Iced Mocha <br />Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="../drinks/drinks6.png" id="Image-id" />
+          <span>
+            Iced FrenchVanilla <br />Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <section class="about" id="about">
+      <div>
+        <p id="about-text">
+          <b> <u>Big Bytes</u></b> is an online web-based ordering system. Where
+          humans don't need to go out to buy food and take too much time going
+          on a food spree. This web-based ordering system will make a great deal
+          for the masses where and when they need food for their guests and for
+          parties and events where they don't have time to look outside to buy
+          food.
+        </p>
+        <p id="about-text">
+          <span id="bold">MISSION:</span> To delight and nourish our customers
+          with healthy, high-quality, delicious foods that are BIG in taste but
+          BIT in price.
+        </p>
+        <p id="about-text">
+          <span id="bold">VISION: </span> To be a well-known brand that
+          consumers choose to satisfy their cravings.
+        </p>
+      </div>
+    </section>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/order.js"></script>
+  </body>
+</html>

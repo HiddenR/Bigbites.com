@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    width: 50%;
+    margin-left: 400px;
+    padding-top: 70px;
+}
+menu {
+    position: absolute;
+    top: 142px;
+    border-right: 20px solid #E3DDC6;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+menu>a {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-left: 80px;
+}
+

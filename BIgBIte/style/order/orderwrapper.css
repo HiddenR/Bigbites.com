@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.order-wrapper{
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    border-radius: 30px;
+    background-color: white ;
+    width: 70%;
+    height: auto;
+    z-index: 3;
+    display: none;
+    
+}
+
+.order-list-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#Prodcut{
+    position: relative;
+    left: 25%;
+}
+#Price {
+    position: relative;
+    left: 49%;
+}
+#Quantity {
+    position: relative;
+    left: 57%;
+}
+
+.ordervalue{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid black;
+}
+.border{
+    border-bottom: 3px solid black;
+}
+
+/* product display */
+
+.orderList{
+        display: flex;
+            align-items: center;
+}
+div>.chartImage {
+    height: 150px;
+    margin: 10px;
+    border: 3px solid black;
+}
+#name{
+   
+    font-size: 30px;
+    font-weight: bold;
+}
+#price {  
+    position: absolute;
+    left: 63%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#quantity {
+    POSITION: ABSOLUTE;
+    RIGHT: 13%;
+    font-size: 30px;
+    font-weight: bold;
+}
+#total{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 77%;
+    margin-top: 5%;
+    border-bottom: 3px solid black;
+}
+
+
+#Confirmed{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+    width: 27%;
+    height: 12%;
+    border-radius: 30px;
+    margin: 20px 0 20px 35%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#Confirmed:hover{
+    background-color: grey;
+    color: white;
+}
+#cancel{
+    position: absolute;
+    border-top-right-radius: 20px;
+    right: -2px;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s    ;
+}
+#cancel:hover{
+    background-color: gray;
+    color: white;
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+    pointer-events: all;
+}

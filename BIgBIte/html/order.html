@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <title>BIg-Bytes</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../style/order/order.css" />
+    <link rel="stylesheet" href="../style/order/nav.css" />
+    <link rel="stylesheet" href="../style/order/menulist.css" />
+    <link rel="stylesheet" href="../style/order/barria.css" />
+    <link rel="stylesheet" href="../style/order/tacos.css" />
+    <link rel="stylesheet" href="../style/order/burger.css" />
+    <link rel="stylesheet" href="../style/order/side-dish.css" />
+    <link rel="stylesheet" href="../style/order/drinks.css" />
+    <link rel="stylesheet" href="../style/order/dessert.css" />
+    <link rel="stylesheet" href="../style//order/orderwrapper.css" />
+    <!-- link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html"> BIG-Bytes </a>
+      <a href="#" onclick="order()"> Order </a>
+    </nav>
+
+    <menu>
+      <a href="#" onclick="barria()">BARRIA </a>
+      <a href="#" onclick="tacos()">TACOS </a>
+      <a href="#" onclick="burger()">BURGERS </a>
+      <a href="#" onclick="side()">SIDE-DISH </a>
+      <a href="#" onclick="drinks()">DRINKS </a>
+      <a href="#" onclick="dessert()">DESSERT </a>
+    </menu>
+
+    <!-- main -->
+    <main>
+      <!-- barria -->
+      <div class="barria-display" id="barria-display">
+        <div class="barria-wrapper">
+          <input type="checkbox" />
+          <img src="../barria/barria1.png" alt="" />
+          <br />
+          <span class="name">Beef Birria Taco </span>
+          <option class="price">₱430</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" id="1" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+
+        <div class="barria-wrapper">
+          <input type="checkbox" />
+          <img src="../barria/barria2.png" alt="" />
+          <br />
+          <span class="name" id="name2">Beef Birria Naked</span>
+          <option class="price">₱410</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+
+        <div class="barria-wrapper">
+          <input type="checkbox" />
+          <img src="../barria/barria3.png" alt="" />
+          <br />
+          <span class="name">Beef Birria Burrito </span>
+          <option class="price">₱450</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+      </div>
+      <!-- tacos -->
+      <div class="display-tacos" id="display-tacos">
+        <div class="tacos-wrapper">
+          <input type="checkbox" />
+          <img src="../tacos/tacos1.png" alt="" />
+          <br />
+          <span class="name">Sisig Baboy Soft Taco </span>
+          <option class="price">₱250</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="tacos-wrapper">
+          <input type="checkbox" />
+          <img src="../tacos/tacos2.png" alt="" />
+          <br />
+          <span class="name">Soft Taco - Chicken</span>
+          <option class="price">₱250</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="tacos-wrapper">
+          <input type="checkbox" />
+          <img src="../tacos/tacos3.png" alt="" />
+          <br />
+          <span class="name">Soft Tacos - Carnitas </span>
+          <option class="price">₱259</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="tacos-wrapper">
+          <input type="checkbox" />
+          <img src="../tacos/tacos4.png" alt="" />
+          <br />
+          <span class="name">Soft Tacos - Steak </span>
+          <option class="price">₱339</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="tacos-wrapper">
+          <input type="checkbox" />
+          <img src="../tacos/tacos5.png" alt="" />
+          <br />
+          <span class="name">Crunchy Tacos </span>
+          <option value="209" class="price">₱209</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+      </div>
+      <!-- burger -->
+      <div class="burger-display" id="burger-display">
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger1.png" alt="" />
+          <br />
+          <span class="name">Plant-burger </span>
+          <option class="price">₱99</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger2.png" alt="" />
+          <br />
+          <span class="name">double-Plant-burger </span>
+          <option class="price">₱199</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger3.png" alt="" />
+          <br />
+          <span class="name">triple-Plant-burger </span>
+          <option class="price">₱299</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger4.png" alt="" />
+          <br />
+          <span class="name">Classic-burger </span>
+          <option class="price">₱99</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger5.png" alt="" />
+          <br />
+          <span class="name" id="name13">Double-classic-burger </span>
+          <option class="price">₱199</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger6.png" alt="" />
+          <br />
+          <span class="name">triple-classic-burger </span>
+          <option class="price">₱299</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger7.png" alt="" />
+          <br />
+          <span class="name">California Burger - Single </span>
+          <option class="price">₱310</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="burger-wrapper">
+          <input type="checkbox" />
+          <img src="../burger-order/burger8.png" alt="" />
+          <br />
+          <span class="name">California Burger - Double </span>
+          <option class="price">₱410</option>
+          >
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+      </div>
+      <!-- side dish -->
+      <div class="side-dish-display" id="side-dish-display">
+        <div class="side-dish-wrapper">
+          <input type="checkbox" />
+          <img src="../sidedish/sidedish1.png" alt="" />
+          <br />
+          <span class="name">Curly Fries </span>
+          <option class="price">₱115</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="side-dish-wrapper">
+          <input type="checkbox" />
+          <img src="../sidedish/sidedish2.png" alt="" />
+          <br />
+          <span class="name">Freedom Fries </span>
+          <option class="price">₱135</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="side-dish-wrapper">
+          <input type="checkbox" />
+          <img src="../sidedish/sidedish3.png" alt="" />
+          <br />
+          <span class="name">Onion Rings </span>
+          <option class="price">₱130</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="side-dish-wrapper">
+          <input type="checkbox" />
+          <img src="../sidedish/sidedish4.png" alt="" />
+          <br />
+          <span class="name">Nachos</span>
+          <option class="price">₱125</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="side-dish-wrapper">
+          <input type="checkbox" />
+          <img src="../sidedish/sidedish5.png" alt="" />
+          <br />
+          <span class="name">Tortilla Chips</span>
+          <option class="price">₱125</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="side-dish-wrapper">
+          <input type="checkbox" />
+          <img src="../sidedish/sidedish6.png" alt="" />
+          <br />
+          <span class="name">Tortilla Soup</span>
+          <option class="price">₱155</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+      </div>
+      <!-- drinks -->
+      <div class="drinks-display" id="drinks-display">
+        <div class="drinks-wrapper">
+          <input type="checkbox" />
+          <img src="../drinks/drinks1.png" alt="" />
+          <br />
+          <span class="name">Cold Brew </span>
+          <option class="price">₱145</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="drinks-wrapper">
+          <input type="checkbox" />
+          <img src="../drinks/drinks2.png" alt="" />
+          <br />
+          <span class="name">Iced Caramel Cold Brew </span>
+          <option class="price">₱165</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="drinks-wrapper">
+          <input type="checkbox" />
+          <img src="../drinks/drinks3.png" alt="" />
+          <br />
+          <span class="name">Iced Caramel </span>
+          <option class="price">₱145</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="drinks-wrapper">
+          <input type="checkbox" />
+          <img src="../drinks/drinks4.png" alt="" />
+          <br />
+          <span class="name">LiberTea MilkTea 940ml</span>
+          <option class="price">₱250</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+            <button id="add" class="btnAdd">ADD</button>
+          </div>
+        </div>
+        <div class="drinks-wrapper">
+          <input type="checkbox" />
+          <img src="../drinks/drinks5.png" alt="" />
+          <br />
+          <span class="name">Iced Mocha Cold Brew</span>
+          <option class="price">₱157</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="drinks-wrapper">
+          <input type="checkbox" />
+          <img src="../drinks/drinks6.png" alt="" />
+          <br />
+          <span class="name">Iced French Vanilla </span>
+          <option class="price">₱167</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+      </div>
+      <!-- dessert -->
+      <div class="dessert-display" id="dessert-display">
+        <div class="dessert-wrapper">
+          <input type="checkbox" />
+          <img src="../dessert/dessert1.png" alt="" />
+          <br />
+          <span class="name">Churros - Chocolate </span>
+          <option class="price">₱100</option>
+
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="dessert-wrapper">
+          <input type="checkbox" />
+          <img src="../dessert/dessert2.png" alt="" />
+          <br />
+          <span class="name">Molten Chocolate cakes </span>
+          <option class="price">₱199</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="dessert-wrapper">
+          <input type="checkbox" />
+          <img src="../dessert/dessert3.png" alt="" />
+          <br />
+          <span class="name">Classic chocolate mousse </span>
+          <option class="price">₱149</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+        <div class="dessert-wrapper">
+          <input type="checkbox" />
+          <img src="../dessert/dessert4.png" alt="" />
+          <br />
+          <span class="name">Chocolate Oreo Parfaits </span>
+          <option class="price">₱169</option>
+          <div class="btn">
+            <button class="decrement">-</button>
+            <input type="text" value="0" />
+            <button class="increment">+</button>
+          </div>
+          <button id="add" class="btnAdd">ADD</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="order-wrapper" id="order-wrapper">
+      <input type="submit" value="🗙" id="cancel" onclick="closed()" />
+      <h1>Confirm Your order</h1>
+
+      <div class="border">
+        <div class="order-list-wrapper">
+          <div class="heading">
+            <p id="Prodcut">Products</p>
+            <p id="Price">Price</p>
+            <p id="Quantity">Quantity</p>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+
+      <p id="total">Total: <span id="Newtotal"> 0 </span></p>
+      <input
+        type="submit"
+        id="Confirmed"
+        value="SUBMIT"
+        onclick="Confirmed()"
+        disabled="disabled"
+      />
+    </div>
+    <div class="active" id="overlay"></div>
+    <script src="../js/order.js"></script>
+    <script src="../js/display.js"></script>
+  </body>
+</html>

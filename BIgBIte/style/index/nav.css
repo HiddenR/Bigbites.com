@@ -1,0 +1,54 @@
+nav {
+    position: fixed;
+    line-height: 100px;
+    width: 100%;
+    box-shadow: 3px 1px 13px 0px black;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    /* font */
+    font-size: 34px;
+    font-weight: 900;
+    
+}
+
+a:hover {
+    color: red;
+}
+
+/* shop button */
+
+#order {
+    background-color: #F1A22B;
+    border-radius: 92px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-right: 10px;
+}
+
+#order:hover {
+    color: red;
+    background-color: black;
+}
+
+
+.toggle-btn > img{
+    height: 100px;
+    position: fixed;
+    left: 44%;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+}
+.toggle-btn>img:hover {
+    background-color: rgb(139, 127, 127);
+}
+
